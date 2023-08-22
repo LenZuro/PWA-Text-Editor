@@ -39,7 +39,7 @@ module.exports = () => {
           {
             src: path.resolve("src/images/logo.png"),
             sizes: [96 , 128 , 192 , 256 , 384 , 512],
-            destination: path.json("assets" , "icons"),
+            destination: path.join("assets" , "icons"),
           },
         ],
       }),
@@ -57,7 +57,7 @@ module.exports = () => {
           use:{
             loader: "babel-loader",
             options:{
-              presets: ["@babel/presrt-env"],
+              presets: ["@babel/preset-env"],
               plugins:[
                 "@babel/plugin-proposal-object-rest-spread",
                 "@babel/transform-runtime",
